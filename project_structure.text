@@ -1,0 +1,169 @@
+- .all-contributorsrc
+- .env.example
+- .eslintrc.json
+- .github
+  - dependabot.yml
+  - workflows
+    - codeql-analysis.yml
+- .gitignore
+- .prettierrc
+- .tina
+  - schema.ts
+  - __generated__
+    - .gitignore
+    - frags.gql
+    - queries.gql
+    - schema.gql
+    - types.ts
+    - _graphql.json
+    - _lookup.json
+    - _schema.json
+- components
+  - Accordion.tsx
+  - ArticleCard.tsx
+  - ArticleImage.tsx
+  - AutofitGrid.tsx
+  - BasicCard.tsx
+  - BasicSection.tsx
+  - Button.tsx
+  - ButtonGroup.tsx
+  - ClientOnly.tsx
+  - CloseIcon.tsx
+  - Code.tsx
+  - Collapse.tsx
+  - ColorSwitcher.tsx
+  - Container.tsx
+  - Drawer.tsx
+  - Footer.tsx
+  - GlobalStyles.tsx
+  - HamburgerIcon.tsx
+  - HeroIllustation.tsx
+  - Icon.tsx
+  - Input.tsx
+  - Link.tsx
+  - Logo.tsx
+  - MailSentState.tsx
+  - MDXRichText.tsx
+  - Navbar.tsx
+  - NavigationDrawer.tsx
+  - NewsletterModal.tsx
+  - NotFoundIllustration.tsx
+  - Overlay.tsx
+  - OverTitle.tsx
+  - Page.tsx
+  - PricingCard.tsx
+  - Quote.tsx
+  - RichText.tsx
+  - SectionTitle.tsx
+  - Separator.tsx
+  - Spacer.tsx
+  - ThreeLayersCircle.tsx
+  - WaveCta.tsx
+  - YoutubeVideo.tsx
+- contexts
+  - newsletter-modal.context.tsx
+- env.ts
+- hooks
+  - useClipboard.ts
+  - useEscKey.ts
+  - useResizeObserver.ts
+  - useScrollPosition.ts
+- LICENSE
+- next-env.d.ts
+- next.config.js
+- package-lock.json
+- package.json
+- pages
+  - 404.tsx
+  - admin
+    - [[...tina]].tsx
+  - api
+    - sendEmail.ts
+  - blog
+    - index.tsx
+    - [slug].tsx
+  - contact.tsx
+  - cookies-policy.tsx
+  - features.tsx
+  - index.tsx
+  - pricing.tsx
+  - privacy-policy.tsx
+  - _app.tsx
+  - _document.tsx
+- posts
+  - test-article-2.mdx
+  - test-article-3.mdx
+  - test-article-4.mdx
+  - test-article-5.mdx
+  - test-article-6.mdx
+  - test-article.mdx
+- public
+  - demo-illustration-1.svg
+  - demo-illustration-2.svg
+  - demo-illustration-3.png
+  - demo-illustration-4.png
+  - demo-illustration-5.png
+  - favicon.ico
+  - grid-icons
+    - asset-1.svg
+    - asset-2.svg
+    - asset-3.svg
+    - asset-4.svg
+    - asset-5.svg
+    - asset-6.svg
+    - asset-7.svg
+    - asset-8.svg
+    - asset-9.svg
+  - partners
+    - logoipsum-logo-1.svg
+    - logoipsum-logo-2.svg
+    - logoipsum-logo-3.svg
+    - logoipsum-logo-4.svg
+    - logoipsum-logo-5.svg
+    - logoipsum-logo-6.svg
+    - logoipsum-logo-7.svg
+  - play-icon.svg
+  - posts
+    - test-article
+      - example-image-1.jpeg
+      - example-image-2.png
+  - prism-theme.css
+  - testimonials
+    - author-photo-1.jpeg
+    - author-photo-2.jpeg
+    - author-photo-3.jpeg
+    - company-logo-1.svg
+    - company-logo-2.svg
+    - company-logo-3.svg
+  - vercel.svg
+- README.md
+- renovate.json
+- tsconfig.json
+- types.ts
+- utils
+  - formatDate.ts
+  - media.ts
+  - postsFetcher.ts
+  - readTime.ts
+- views
+  - ContactPage
+    - FormSection.tsx
+    - InformationSection.tsx
+  - HomePage
+    - Cta.tsx
+    - Features.tsx
+    - FeaturesGallery.tsx
+    - Hero.tsx
+    - Partners.tsx
+    - ScrollableBlogPosts.tsx
+    - Testimonials.tsx
+  - PricingPage
+    - FaqSection.tsx
+    - PricingTablesSection.tsx
+  - SingleArticlePage
+    - Header.tsx
+    - MetadataHead.tsx
+    - OpenGraphHead.tsx
+    - ShareWidget.tsx
+    - StructuredDataHead.tsx
+- yarn.lock
