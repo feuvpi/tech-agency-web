@@ -20,11 +20,11 @@ export default function Hero() {
         Bem-vindo à Kiwi Tech, onde transformamos ideias em realidade digital. Somos uma agência de tecnologia apaixonada por inovação, design elegante e soluções tecnológicas de alto desempenho, da concepção à implementação.</Description>
         <CustomButtonGroup>
           <Button onClick={() => setIsModalOpened(true)}>
-            Subscribe to the newsletter <span>&rarr;</span>
+            Solicitar Orçamento <span>&rarr;</span>
           </Button>
           <NextLink href="#whitepaper" passHref>
             <Button transparent>
-              Features <span>&rarr;</span>
+              PRODUTOS <span>&rarr;</span>
             </Button>
           </NextLink>
         </CustomButtonGroup>
