@@ -13,7 +13,7 @@ export default function Hero() {
 
   return (
     <HeroWrapper>
-      <Contents>
+      <Contents >
         <CustomOverTitle>Impulsione seu negocio para o sucesso digital</CustomOverTitle>
         <Heading>Delineando o futuro com tecnologia</Heading>
         <Description>
@@ -29,7 +29,7 @@ export default function Hero() {
           </NextLink>
         </CustomButtonGroup>
       </Contents>
-      <ImageContainer>
+      <ImageContainer style={{ position: 'relative', overflow: 'visible', height: '500px', width: '100%'}}>
         <HeroIllustration />
       </ImageContainer>
     </HeroWrapper>
@@ -37,6 +37,7 @@ export default function Hero() {
 }
 
 const HeroWrapper = styled(Container)`
+  
   display: flex;
   padding-top: 5rem;
 
@@ -61,13 +62,19 @@ const CustomButtonGroup = styled(ButtonGroup)`
 `;
 
 const ImageContainer = styled.div`
-  display: flex;
+  position: absolute;
+  //display: flex;
   flex: 1;
-  justify-content: flex-end;
-  align-items: flex-start;
+  z-index: 0;
+  //justify-content: flex-end;
+  //align-items: flex-start;
+  overflow: visible
+  opacity: 0.5; 
 
   svg {
-    max-width: 45rem;
+    position: absolute;
+    max-width: 80rem;
+    opacity: 0.6; 
   }
 
   ${media('<=desktop')} {
@@ -83,6 +90,7 @@ const Description = styled.p`
   font-size: 1.8rem;
   opacity: 0.8;
   line-height: 1.6;
+  text-align: justify;
 
   ${media('<=desktop')} {
     font-size: 1.5rem;
