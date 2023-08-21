@@ -23,21 +23,22 @@ export default function Homepage({ posts }: InferGetStaticPropsType<typeof getSt
           content="Tempor nostrud velit fugiat nostrud duis incididunt Lorem deserunt est tempor aute dolor ad elit."
         />
       </Head>
-      <HomepageWrapper>
+      <HomepageWrapper >
         <WhiteBackgroundContainer>
           <Hero />
           <Partners />
           <BasicSection imageUrl="/demo-illustration-1.svg" title="Desenvolvimento de Aplicações Mobile" overTitle="Mobile">
-            <p>
+            <p style={{ textAlign: 'justify' }}>
             Transformamos conceitos em experiências digitais. Criamos aplicativos e sites sob medida, garantindo usabilidade intuitiva e desempenho excepcional.{' '}
               <Link href="/help-center">Veja nosso portfolio.</Link>
             </p>
           </BasicSection>
           <BasicSection imageUrl="/demo-illustration-2.svg" title="Conecte-se com IAs" overTitle="Inteligência Artificial" reversed>
-            <p>
+            <p style={{ textAlign: 'justify' }}>
             Conectamos inteligência artificial ao seu ecossistema tecnológico. Nossa expertise em integração permite que seus sistemas e bancos de dados colaborem perfeitamente com modelos de AI,{' '}
               <strong>impulsionando insights e eficiência.</strong>
             </p>
+            
 
           </BasicSection>
         </WhiteBackgroundContainer>
@@ -49,15 +50,24 @@ export default function Homepage({ posts }: InferGetStaticPropsType<typeof getSt
           <ScrollableBlogPosts posts={posts} />
         </DarkerBackgroundContainer>
       </HomepageWrapper>
+
+      
     </>
   );
 }
+
+// const Hero = styled.div`
+//   & > *:not(:first-child) {
+//     margin-top: 15rem;
+//   }
+// `;
 
 const HomepageWrapper = styled.div`
   & > :last-child {
     margin-bottom: 15rem;
   }
 `;
+
 
 const DarkerBackgroundContainer = styled.div`
   background: rgb(var(--background));
@@ -78,6 +88,7 @@ const WhiteBackgroundContainer = styled.div`
     margin-top: 15rem;
   }
 `;
+
 
 export async function getStaticProps() {
   return {
