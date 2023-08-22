@@ -65,6 +65,7 @@ export default function Homepage({ posts }: InferGetStaticPropsType<typeof getSt
 const HomepageWrapper = styled.div`
   & > :last-child {
     margin-bottom: 15rem;
+    overflow: visible;
   }
 `;
 
@@ -79,6 +80,7 @@ const DarkerBackgroundContainer = styled.div`
 
 const WhiteBackgroundContainer = styled.div`
   background: rgb(var(--secondBackground));
+  overflow: visible;
 
   & > :last-child {
     padding-bottom: 15rem;
