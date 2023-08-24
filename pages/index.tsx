@@ -28,7 +28,7 @@ export default function Homepage({ posts }: InferGetStaticPropsType<typeof getSt
           <Hero />
           <Partners />
           <BasicSection imageUrl="/demo-illustration-1.svg" title="Desenvolvimento de Aplicações Mobile" overTitle="Mobile">
-            <p style={{ textAlign: 'justify' }}>
+            <p style={{ textAlign: 'justify', zIndex: 1 }}>
             Transformamos conceitos em experiências digitais. Criamos aplicativos e sites sob medida, garantindo usabilidade intuitiva e desempenho excepcional.{' '}
               <Link href="/help-center">Veja nosso portfolio.</Link>
             </p>
