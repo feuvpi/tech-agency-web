@@ -29,7 +29,7 @@ export default function Hero() {
           </NextLink>
         </CustomButtonGroup>
       </Contents>
-      <ImageContainer style={{ position: 'relative', overflow: 'visible', height: '500px', width: '100%'}}>
+      <ImageContainer style={{ overflow: 'visible', height: '60rem', width: '100%'}}>
         <HeroIllustration />
       </ImageContainer>
     </HeroWrapper>
@@ -40,6 +40,8 @@ const HeroWrapper = styled(Container)`
   
   display: flex;
   padding-top: 5rem;
+  overflow: visible;
+
 
   ${media('<=desktop')} {
     padding-top: 1rem;
@@ -65,16 +67,18 @@ const ImageContainer = styled.div`
   position: absolute;
   //display: flex;
   flex: 1;
-  z-index: 0;
-  //justify-content: flex-end;
+  z-index: 1;
+  justify-content: right
   //align-items: flex-start;
   overflow: visible
-  opacity: 0.5; 
+  opacity: .8; 
 
   svg {
     position: absolute;
     max-width: 80rem;
-    opacity: 0.6; 
+    opacity: 0.6;
+    right: 0; 
+    z-index: 1;
   }
 
   ${media('<=desktop')} {
@@ -82,18 +86,22 @@ const ImageContainer = styled.div`
     justify-content: center;
     svg {
       max-width: 80%;
+      height: 120rem;
+      z-index: 1;
     }
   }
 `;
 
 const Description = styled.p`
   font-size: 1.8rem;
-  opacity: 0.8;
+  //opacity: 0.8;
   line-height: 1.6;
   text-align: justify;
+  z-index: 999;
 
   ${media('<=desktop')} {
     font-size: 1.5rem;
+    z-index: 100;
   }
 `;
 
@@ -107,6 +115,7 @@ const Heading = styled.h1`
   line-height: 1.1;
   margin-bottom: 4rem;
   letter-spacing: -0.03em;
+  z-index: 9999;
 
   ${media('<=tablet')} {
     font-size: 4.6rem;
