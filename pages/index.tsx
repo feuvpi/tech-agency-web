@@ -23,35 +23,32 @@ export default function Homepage({ posts }: InferGetStaticPropsType<typeof getSt
           content="Tempor nostrud velit fugiat nostrud duis incididunt Lorem deserunt est tempor aute dolor ad elit."
         />
       </Head>
-      <HomepageWrapper >
+      <HomepageWrapper>
         <WhiteBackgroundContainer>
           <Hero />
           <Partners />
           <BasicSection imageUrl="/demo-illustration-1.svg" title="Desenvolvimento de Aplicações Mobile" overTitle="Mobile">
             <p style={{ textAlign: 'justify', zIndex: 1 }}>
-            Transformamos conceitos em experiências digitais. Criamos aplicativos e sites sob medida, garantindo usabilidade intuitiva e desempenho excepcional.{' '}
-              <Link href="/help-center">Veja nosso portfolio.</Link>
+              Transformamos conceitos em experiências digitais. Criamos aplicativos e sites sob medida, garantindo usabilidade intuitiva e
+              desempenho excepcional. <Link href="/help-center">Veja nosso portfolio.</Link>
             </p>
           </BasicSection>
           <BasicSection imageUrl="/demo-illustration-2.svg" title="Conecte-se com IAs" overTitle="Inteligência Artificial" reversed>
             <p style={{ textAlign: 'justify' }}>
-            Conectamos inteligência artificial ao seu ecossistema tecnológico. Nossa expertise em integração permite que seus sistemas e bancos de dados colaborem perfeitamente com modelos de AI,{' '}
-              <strong>impulsionando insights e eficiência.</strong>
+              Conectamos inteligência artificial ao seu ecossistema tecnológico. Nossa expertise em integração permite que seus sistemas e
+              bancos de dados colaborem perfeitamente com modelos de AI, <strong>impulsionando insights e eficiência.</strong>
             </p>
-            
-
           </BasicSection>
         </WhiteBackgroundContainer>
         <DarkerBackgroundContainer>
-          <Cta />
-          <FeaturesGallery />
           <Features />
+          <Cta />
+          {/*<FeaturesGallery />*/}
+
           <Testimonials />
           <ScrollableBlogPosts posts={posts} />
         </DarkerBackgroundContainer>
       </HomepageWrapper>
-
-      
     </>
   );
 }
@@ -68,7 +65,6 @@ const HomepageWrapper = styled.div`
     overflow: visible;
   }
 `;
-
 
 const DarkerBackgroundContainer = styled.div`
   background: rgb(var(--background));
@@ -90,7 +86,6 @@ const WhiteBackgroundContainer = styled.div`
     margin-top: 15rem;
   }
 `;
-
 
 export async function getStaticProps() {
   return {
