@@ -18,7 +18,7 @@ const TABS = [
     secondColor: '221,9,57',
   },
   {
-    title: 'Another amazing feature',
+    title: 'Melhores praticas do mercado',
     description:
       '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quidem ipsam ratione dicta quis cupiditate consequuntur laborum ducimus iusto velit.</p>',
     imageUrl: '/demo-illustration-4.png',
@@ -76,7 +76,7 @@ export default function FeaturesGallery() {
   return (
     <FeaturesGalleryWrapper>
       <Content>
-        <OverTitle>features</OverTitle>
+        <OverTitle>SERVIÇOS</OverTitle>
         <SectionTitle>What are you signing in for?</SectionTitle>
       </Content>
       <GalleryWrapper>
